@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+}
+
+.new-tweet {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.new-tweet h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.new-tweet label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.new-tweet textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+}
+
+.new-tweet button {
+  background-color: #095898;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.new-tweet .counter {
+  font-size: 25px;
+  color: #000000;
+}

@@ -20,7 +20,7 @@ nav {
   align-items: center;
 }
 
-.new-tweet {
+.add-tweet {
   display: flex;
   flex-direction: column;
   align-items: center;
