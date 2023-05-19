@@ -34,7 +34,16 @@
   font-weight: bold;
 }
 
-.new-tweet .counter {
+.counter {
   font-size: 25px;
   color: #000000;
+}
+
+.button140 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invalid {
+  color: red;
 }
