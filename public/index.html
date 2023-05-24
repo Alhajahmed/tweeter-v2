@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -51,13 +52,13 @@
         </span>
       </div>
     </nav>
-    <header>
+    <header class="tweet-header">
       <div>
-        <img id="avatar" src="/images/profile-hex.png" />
+        <img id="avatar" src="/images/user-avatar.jpg" />
       </div>
       <br />
       <div>
-        <h2 id="name">Ahmed</h2>
+        <h2 id="name">Ahmed Alhajahmed</h2>
       </div>
     </header>
 
@@ -73,6 +74,44 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+      <section>
+        <article class="tweet">
+          <header>
+            <div class="user-display">
+              <img
+                id="user-avatar"
+                src="/images/user-avatar.jpg"
+                alt="User Avatar"
+              />
+              <h3>Ahmed Alhajahmed</h3>
+            </div>
+            <div>
+              <p>@Ahmed</p>
+            </div>
+          </header>
+          <main class="tweet-content">
+            <p>
+              You're driven, you're passionate, you're eager to get your hands
+              on a keyboard and start crafting the next web app that will take
+              the world by storm
+            </p>
+          </main>
+          <footer>
+            <div class="tweet-time">
+              <i class="fas fa-clock"></i>
+              <span>2 hours ago</span>
+            </div>
+            <div class="tweet-icons">
+              <i class="fas fa-reply"></i>
+              <span>Reply</span>
+              <i class="fas fa-retweet"></i>
+              <span>Retweet</span>
+              <i class="fas fa-heart"></i>
+              <span>Like</span>
+            </div>
+          </footer>
+        </article>
       </section>
     </main>
   </body>
