@@ -30,7 +30,7 @@ $(document).ready(function () {
           <p>${tweetData.user.handle}</p>
         </div>
       </header>
-        <p class="tweet-content"> ${tweetData.content.text}</p>
+        <p class="tweet-content"> ${escape(tweetData.content.text)}</p>
       <footer>
         <div class="tweet-time">
           <i class="fas fa-clock"></i>
@@ -111,4 +111,10 @@ $(document).ready(function () {
     });
   };
   loadTweet();
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 });
