@@ -1,3 +1,6 @@
+#tweets-container {
+  width: 100%;
+}
 .tweet {
   display: flex;
   flex-direction: column;

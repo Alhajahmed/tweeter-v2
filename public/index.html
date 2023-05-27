@@ -73,6 +73,9 @@ https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <section class="error-container">
+          <div class="error-message"></div>
+        </section>
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
           <label for="tweet-text">What are you humming about?</label>

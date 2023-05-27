@@ -74,17 +74,21 @@ $(document).ready(function () {
       // Get the character count of the tweet content
       const tweetContent = $("#tweet-text").val();
       const tweetLength = tweetContent.length;
+      // Clear previous error message
       // Validate if the tweet is not empty
       if (!tweetContent) {
-        alert("Please write a tweet");
+        $(".error-message").text("Please write a tweet 🐦").slideDown();
       } else if (tweetLength > 140) {
-        alert("Your Tweet exceeds the character limit");
+        $(".error-message")
+          .text("🛑 Your Tweet exceeds the character limit 🛑")
+          .slideDown();
       } else {
         // Send a POST request to the server
         $.post(
           "http://localhost:8080/tweets",
           formData,
           function (data, status) {
+            $(".error-message").empty().hide();
             // Refetch tweets on Submission
             loadTweet();
           }
