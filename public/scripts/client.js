@@ -70,15 +70,26 @@ $(document).ready(function () {
     event.preventDefault();
     // Serialize the form data
     const formData = $(this).serialize();
-    // Send a POST request to the server
-    $.post("http://localhost:8080/tweets", formData, function (data, status) {
-      console.log(
-        "Form data submitted successfully. Data:",
-        data,
-        "Status:",
-        status
-      );
-    });
+    // Get the character count of the tweet content
+    const tweetContent = $("#tweet-text").val();
+    const tweetLength = tweetContent.length;
+
+    // Validate if the tweet is not empty
+    if (!tweetContent) {
+      alert("Please write a tweet");
+    } else if (tweetLength > 140) {
+      alert("Your Tweet exceeds the character limit");
+    } else {
+      // Send a POST request to the server
+      $.post("http://localhost:8080/tweets", formData, function (data, status) {
+        console.log(
+          "Form data submitted successfully. Data:",
+          data,
+          "Status:",
+          status
+        );
+      });
+    }
   });
 
   /**
