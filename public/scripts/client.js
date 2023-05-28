@@ -88,6 +88,7 @@ $(document).ready(function () {
           "http://localhost:8080/tweets",
           formData,
           function (data, status) {
+            // Clear the form
             $(".error-message").empty().hide();
             // Refetch tweets on Submission
             loadTweet();
@@ -115,10 +116,17 @@ $(document).ready(function () {
     });
   };
   loadTweet();
-
+  /**
+   * Escapes special characters in a string to prevent cross-site scripting (XSS) attacks.
+   * @param {string} str - The input string to escape.
+   * @returns {string} - The escaped string.
+   */
   const escape = function (str) {
+    // Create a new div element
     let div = document.createElement("div");
+    // Set the text content of the div to the input string
     div.appendChild(document.createTextNode(str));
+    // Return the HTML content of the div, which escapes special characters
     return div.innerHTML;
   };
 });
