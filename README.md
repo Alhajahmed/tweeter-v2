@@ -4,9 +4,9 @@ This is a simple Twitter clone web application built with HTML, CSS, and JavaScr
 
 ## Final Product
 
-!["Screenshot of the desktop layout"]()
-!["Screenshot of the tablet layout"]()
-!["Screenshot of an error message"]()
+!["Screenshot of the desktop layout"](https://github.com/Alhajahmed/tweeter-v2/blob/master/public/docs/Desktop.png?raw=true)
+!["Screenshot of the tablet layout"](https://github.com/Alhajahmed/tweeter-v2/blob/master/public/docs/tablet.png?raw=true)
+!["Screenshot of an error message"](https://github.com/Alhajahmed/tweeter-v2/blob/master/public/docs/error%20message.png?raw=true)
 
 ## Features
 
