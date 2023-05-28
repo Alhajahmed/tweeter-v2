@@ -1,6 +1,6 @@
 # Tweeter Project
 
-This is a simple Twitter clone web application built with HTML, CSS, and JavaScript. It allows users to create short posts of up to 140 characters and have them append to the main page. Posts are sequential, with the most recent posts appearing at the top of the page. To do so, Tweeter fetches a list of posts from a simplified ‘server’ and allows users to add posts to this list dynamically. All the requests will be made asynchronously, which will allow us to gain familiarity using the jQuery library to make these requests.
+This is a simple Twitter clone web application built with HTML, CSS, and JavaScript. It allows users to create short posts of up to 140 characters and have them append to the main page. Posts are sequential, with the most recent posts appearing at the top of the page. To do so, Tweeter fetches a list of posts from a simplified ‘server’ and allows users to add posts to this list dynamically.
 
 ## Final Product
 
