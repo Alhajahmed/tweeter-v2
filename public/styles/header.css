@@ -12,9 +12,14 @@
 
 #avatar {
   height: 140px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
 }
 
 #name {
-  margin-top: 0;
+  margin: 16px;
+  font-weight: bold;
+  font-size: larger;
   color: azure;
 }

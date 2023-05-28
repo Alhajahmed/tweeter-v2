@@ -1,0 +1,42 @@
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  nav {
+    height: 200px;
+    top: 0;
+    border-bottom: #a0c8e4 solid 5px;
+  }
+  .logo {
+    font-size: 46px;
+  }
+  .add-tweet {
+    font-size: 36px;
+  }
+  .container,
+  .tweet-header {
+    width: calc(100% / 3);
+    float: left;
+  }
+
+  .container {
+    float: none;
+    margin-top: 200px;
+  }
+  .tweet-header {
+    position: sticky;
+    top: 200px;
+    height: 100vh;
+    z-index: -1;
+  }
+  #avatar {
+    position: sticky;
+
+    left: 30%;
+    position: absolute;
+    top: 20px;
+  }
+  #name {
+    left: 20%;
+    position: absolute;
+    top: 180px;
+  }
+}
