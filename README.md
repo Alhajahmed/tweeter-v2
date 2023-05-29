@@ -21,8 +21,10 @@ This is a simple Twitter clone web application built with HTML, CSS, and JavaScr
 1. Clone the repository: `git clone https://github.com/Alhajahmed/tweeter-v2`
 2. Open the project in your preferred code editor.
 3. Open the `index.html` file in a web browser.
-4. Go to <http://localhost:8080/> in your browser.
-5. Start tweeting and browsing the tweets.
+4. Install dependencies using the `npm install` command.
+5. Start the web server using the `npm run local` command.
+6. Go to <http://localhost:8080/> in your browser.
+7. Start tweeting and browsing the tweets.
 
 ## Technologies Used
 

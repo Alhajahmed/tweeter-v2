@@ -54,6 +54,7 @@ $(document).ready(function () {
    * @param {array} tweets - Array of tweet objects
    */
   const renderTweets = function (tweets) {
+    $("#tweets-container").empty(); // Clear previous tweets
     for (const tweetData of tweets) {
       const $tweet = createTweetElement(tweetData);
       $("#tweets-container").prepend($tweet);
@@ -92,8 +93,18 @@ $(document).ready(function () {
             $(".error-message").empty().hide();
             // Refetch tweets on Submission
             loadTweet();
+            // Clear the textarea
+            $("#tweet-text").val("");
+            // Reset the counter to 140
+            $(".counter").text("140");
           }
-        );
+        ).fail(function (status, error) {
+          $(".error-message")
+            .text(
+              `Sorry! An error occurred while submitting the form data: ${error}`
+            )
+            .slideDown();
+        });
       }
     });
   };
